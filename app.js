@@ -1,106 +1,106 @@
+let personajes = [];
+let personajeActual = null;
+
 async function cargarJuego() {
 
-    const personajes = await fetch("personajes.json")
-        .then(response => response.json());
+    personajes = await fetch("personajes.json")
+        .then(r => r.json());
 
-    let personajeId = localStorage.getItem("personaje");
+    const saved = localStorage.getItem("personaje");
 
-    if (!personajeId) {
-
-        const aleatorio =
-            personajes[Math.floor(Math.random() * personajes.length)];
-
-        personajeId = aleatorio.id;
-
-        localStorage.setItem(
-            "personaje",
-            personajeId
-        );
+    if (saved) {
+        personajeActual = personajes.find(p => String(p.id) === saved);
     }
 
-    const personajeAsignado =
-        personajes.find(
-            p => String(p.id) === String(personajeId)
-        );
+    if (!personajeActual) {
+        personajeActual = getRandomPersonaje();
+        savePersonaje(personajeActual);
+    }
 
-    document.getElementById(
-        "mi-personaje-img"
-    ).src = personajeAsignado.foto;
+    renderPersonaje();
+    renderTablero();
+    bindEvents();
+}
 
-    document.getElementById(
-        "mi-personaje-nombre"
-    ).textContent = personajeAsignado.nombre;
+function getRandomPersonaje() {
+    return personajes[
+        Math.floor(Math.random() * personajes.length)
+    ];
+}
 
-    const tablero =
-        document.getElementById("tablero");
+function savePersonaje(p) {
+    localStorage.setItem("personaje", p.id);
+}
+
+function renderPersonaje() {
+    document.getElementById("mi-personaje-img").src =
+        personajeActual.foto;
+
+    document.getElementById("mi-personaje-nombre").textContent =
+        personajeActual.nombre;
+}
+
+function renderTablero() {
+
+    const tablero = document.getElementById("tablero");
+    tablero.innerHTML = "";
 
     const descartados =
-        JSON.parse(
-            localStorage.getItem("descartados") || "[]"
-        );
+        JSON.parse(localStorage.getItem("descartados") || "[]");
 
-    personajes.forEach(personaje => {
+    personajes.forEach(p => {
 
-        const card =
-            document.createElement("div");
-
+        const card = document.createElement("div");
         card.className = "card";
 
-        if (descartados.includes(personaje.id)) {
+        if (descartados.includes(p.id)) {
             card.classList.add("descartado");
         }
 
         card.innerHTML = `
-            <img
-                src="${personaje.foto}"
-                alt="${personaje.nombre}"
-            >
-
-            <div class="nombre">
-                ${personaje.nombre}
-            </div>
+            <img src="${p.foto}" alt="${p.nombre}">
+            <div class="nombre">${p.nombre}</div>
         `;
 
         card.addEventListener("click", () => {
-
-            card.classList.toggle("descartado");
-
-            let descartadosActuales =
-                JSON.parse(
-                    localStorage.getItem("descartados") || "[]"
-                );
-
-            if (card.classList.contains("descartado")) {
-
-                if (!descartadosActuales.includes(personaje.id)) {
-                    descartadosActuales.push(personaje.id);
-                }
-
-            } else {
-
-                descartadosActuales =
-                    descartadosActuales.filter(
-                        id => id !== personaje.id
-                    );
-            }
-
-            localStorage.setItem(
-                "descartados",
-                JSON.stringify(descartadosActuales)
-            );
+            toggleDescartado(p.id, card);
         });
 
         tablero.appendChild(card);
     });
+}
 
-    document
-        .getElementById("nuevo-personaje")
+function toggleDescartado(id, card) {
+
+    let descartados =
+        JSON.parse(localStorage.getItem("descartados") || "[]");
+
+    if (descartados.includes(id)) {
+        descartados = descartados.filter(x => x !== id);
+        card.classList.remove("descartado");
+    } else {
+        descartados.push(id);
+        card.classList.add("descartado");
+    }
+
+    localStorage.setItem("descartados", JSON.stringify(descartados));
+}
+
+function bindEvents() {
+
+    document.getElementById("nuevo-personaje")
         .addEventListener("click", () => {
 
-            localStorage.removeItem("personaje");
+            personajeActual = getRandomPersonaje();
+            savePersonaje(personajeActual);
+            renderPersonaje();
+        });
+    document.getElementById("reset-tablero")
+        .addEventListener("click", () => {
+
             localStorage.removeItem("descartados");
 
-            location.reload();
+            renderTablero();
         });
 }
 

@@ -9,28 +9,37 @@
 </head>
 
 <body>
-
 <header>
-    <div>
+
+    <div id="titulo">
         <h1>🎭 Quién es Quién</h1>
-        <p>Pulsa sobre las fotos para descartarlas.</p>
+
+        <h2>
+            Bienvenida a nuestro <span style="color: rgb(124, 124, 236); font-weight: bold;">Quién es Quién</span> personalizado!
+            Pulsa sobre los personajes para descartarlos
+        </h2>
+
+        <p>
+            Se aceptan sugerencias para nuevos personajes
+        </p>
+
+        <button id="reset-tablero">
+            Reiniciar tablero
+        </button>
     </div>
 
     <div id="mi-personaje-box">
         <h2>Tu personaje</h2>
 
-        <img
-            id="mi-personaje-img"
-            src=""
-            alt="Personaje asignado"
-        >
+        <img id="mi-personaje-img" src="" alt="">
 
         <p id="mi-personaje-nombre"></p>
 
         <button id="nuevo-personaje">
-            🔄 Nuevo personaje
+            Nuevo personaje
         </button>
     </div>
+
 </header>
 
 <main id="tablero"></main>

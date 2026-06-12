@@ -12,17 +12,26 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+h1 {
+    font-size:  60px;
 }
 
 #mi-personaje-box {
-    background: white;
+    background: #a4bbcb;
     padding: 16px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,.1);
     min-width: 240px;
+}
+#mi-personaje-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #mi-personaje-box h2 {
@@ -30,22 +39,50 @@ header {
 }
 
 #mi-personaje-img {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
+    overflow: hidden;
+    align-self: center;
+
 }
 
 #mi-personaje-nombre {
     text-align: center;
     font-weight: bold;
+    font-size: 40px;
 }
 
 #nuevo-personaje {
     width: 100%;
     padding: 10px;
+    border: none;
     cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    background: #0c2434;
+    border-radius: 10px;
+    transition: .15s;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
 }
+
+#nuevo-personaje:hover{
+    background-color: #113752;
+    opacity: 0.8;
+}
+
+#titulo {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
 
 #tablero {
     display: grid;
@@ -84,6 +121,33 @@ header {
     filter: grayscale(100%);
 }
 
+#acciones {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#reset-tablero {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #0c2434;
+    color: white;
+    font-weight:600;
+    transition: .15s;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+    width: 50%;
+    align-self: center;
+}
+
+#reset-tablero:hover {
+    background: #113752;
+}
+
+    
+    
 @media (max-width: 768px) {
 
     header {
