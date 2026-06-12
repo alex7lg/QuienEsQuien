@@ -27,6 +27,7 @@ h1 {
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,.1);
     min-width: 240px;
+    max-width: 240px;
 }
 #mi-personaje-box {
     display: flex;
@@ -51,7 +52,8 @@ h1 {
 #mi-personaje-nombre {
     text-align: center;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 20px;
+    white-space: normal;
 }
 
 #nuevo-personaje {
