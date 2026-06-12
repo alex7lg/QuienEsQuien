@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "nombre": "Alex",
+    "foto": "fotos/alex.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Jiang",
+    "foto": "fotos/jiang.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Auronplay",
+    "foto": "fotos/auron.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Barbie",
+    "foto": "fotos/barbie.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Deku",
+    "foto": "fotos/deku.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Emma",
+    "foto": "fotos/emma.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Eren",
+    "foto": "fotos/eren.jpg"
+  },
+  {
+    "id":8,
+    "nombre": "Fern",
+    "foto": "fotos/fern.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Gojo",
+    "foto": "fotos/gojo.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Bibble",
+    "foto": "fotos/bibble.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Frieren",
+    "foto": "fotos/frieren.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Haymitch",
+    "foto": "fotos/haymitch.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Inosuke",
+    "foto": "fotos/inosuke.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Katniss",
+    "foto": "fotos/katniss.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "Levi",
+    "foto": "fotos/levi.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Megumi",
+    "foto": "fotos/megumi.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Mikasa",
+    "foto": "fotos/mikasa.jpg"
+  },
+  {
+    "id": 18,
+    "nombre": "Nobara",
+    "foto": "fotos/nobara.jpg"
+  },
+  {
+    "id": 19,
+    "nombre": "Norman",
+    "foto": "fotos/norman.jpg"
+  },
+  {
+    "id": 20,
+    "nombre": "Caminante sobre el mar de nubes",
+    "foto": "fotos/nubes.jpg"
+  },
+  {
+    "id": 21,
+    "nombre": "Peeta",
+    "foto": "fotos/peeta.jpg"
+  },
+  {
+    "id": 22,
+    "nombre": "Preminger",
+    "foto": "fotos/preminger.jpg"
+  },
+  {
+    "id": 23,
+    "nombre": "Ray",
+    "foto": "fotos/ray.jpg"
+  },
+  {
+    "id": 24,
+    "nombre": "President Snow",
+    "foto": "fotos/snow.jpg"
+  },
+  {
+    "id": 25,
+    "nombre": "Stark",
+    "foto": "fotos/stark.jpg"
+  },
+  {
+    "id": 26,
+    "nombre": "Sukuna",
+    "foto": "fotos/sukuna.jpg"
+  },
+  {
+    "id": 27,
+    "nombre": "Tanjiro",
+    "foto": "fotos/tanjiro.jpg"
+  },
+  {
+    "id": 28,
+    "nombre": "Yuji",
+    "foto": "fotos/yuji.jpg"
+  }
+]
