@@ -2,11 +2,11 @@
   {
     "id": "modo1",
     "nombre": "Modo 1",
-    "archivo": "/personajes1.json"
+    "archivo": "json/personajes1.json"
   },
   {
     "id": "modo2",
     "nombre": "Modo 2",
-    "archivo": "/personajes2.json"
+    "archivo": "json/personajes2.json"
   }
 ]
