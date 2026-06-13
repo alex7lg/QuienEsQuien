@@ -41,10 +41,11 @@ h1 {
 
 #mi-personaje-img {
     width: 200px;
-    height: 200px;
     object-fit: cover;
     border-radius: 8px;
+    aspect-ratio: 0.75;
     overflow: hidden;
+    object-position: top;
     align-self: center;
 
 }
@@ -88,7 +89,7 @@ h1 {
 
 #tablero {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-template-columns: repeat(7, 1fr);
     gap: 16px;
 }
 
@@ -107,9 +108,9 @@ h1 {
 
 .card img {
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 0.85;
     object-fit: cover;
-    display: block;
+    object-position: top;
 }
 
 .nombre {
@@ -148,7 +149,34 @@ h1 {
     background: #113752;
 }
 
-    
+#modos-container {
+    margin-top: 20px;
+}
+
+#modos-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.modo-tab {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #ddd;
+    transition: .15s;
+    font-weight: 600;
+}
+
+.modo-tab:hover {
+    background: #c8c8c8;
+}
+
+.modo-tab.activo {
+    background: rgb(26, 26, 120);
+    color: white;
+}
     
 @media (max-width: 768px) {
 
@@ -162,6 +190,7 @@ h1 {
 
     #mi-personaje-img {
         width: 100%;
+        object-position: top;
         height: auto;
     }
 

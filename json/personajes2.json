@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "nombre": "Michael",
+    "foto": "../fotos/modo2/person1.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Sarah",
+    "foto": "../fotos/modo2/person2.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Richard",
+    "foto": "../fotos/modo2/person3.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Moses",
+    "foto": "../fotos/modo2/person4.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Walter",
+    "foto": "../fotos/modo2/person5.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Héctor",
+    "foto": "../fotos/modo2/person6.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Layla",
+    "foto": "../fotos/modo2/person7.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Damián",
+    "foto": "../fotos/modo2/person8.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Jessica",
+    "foto": "../fotos/modo2/person9.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Jonatan Daniel",
+    "foto": "../fotos/modo2/person10.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Matteo",
+    "foto": "../fotos/modo2/person11.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Kyle",
+    "foto": "../fotos/modo2/person12.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Dolores",
+    "foto": "../fotos/modo2/person13.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Linda",
+    "foto": "../fotos/modo2/person14.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "Luis Miguel",
+    "foto": "../fotos/modo2/person15.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Nahuel",
+    "foto": "../fotos/modo2/person16.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Alberto",
+    "foto": "../fotos/modo2/person17.jpg"
+  },
+  {
+    "id": 18,
+    "nombre": "Fede",
+    "foto": "../fotos/modo2/person18.jpg"
+  },
+  {
+    "id": 19,
+    "nombre": "Eris",
+    "foto": "../fotos/modo2/person19.jpg"
+  },
+  {
+    "id": 20,
+    "nombre": "David",
+    "foto": "../fotos/modo2/person20.jpg"
+  },
+  {
+    "id": 21,
+    "nombre": "Theo",
+    "foto": "../fotos/modo2/person21.jpg"
+  },
+  {
+    "id": 22,
+    "nombre": "Jermaine",
+    "foto": "../fotos/modo2/person22.jpg"
+  },
+  {
+    "id": 23,
+    "nombre": "Ralph",
+    "foto": "../fotos/modo2/person23.jpg"
+  },
+  {
+    "id": 24,
+    "nombre": "Kevin",
+    "foto": "../fotos/modo2/person24.jpg"
+  },
+  {
+    "id": 25,
+    "nombre": "Imani",
+    "foto": "../fotos/modo2/person25.jpg"
+  },
+  {
+    "id": 26,
+    "nombre": "Javier",
+    "foto": "../fotos/modo2/person26.jpg"
+  },
+  {
+    "id": 27,
+    "nombre": "Zhāng Wěi",
+    "foto": "../fotos/modo2/person27.jpg"
+  },
+  {
+    "id": 28,
+    "nombre": "Maria Lǐ",
+    "foto": "../fotos/modo2/person28.jpg"
+  },
+  {
+    "id": 29,
+    "nombre": "Carlos",
+    "foto": "../fotos/modo2/person29.jpg"
+  },
+  {
+    "id": 30,
+    "nombre": "Zaria",
+    "foto": "../fotos/modo2/person30.jpg"
+  },
+  {
+    "id": 31,
+    "nombre": "Jada",
+    "foto": "../fotos/modo2/person31.jpg"
+  },
+  {
+    "id": 32,
+    "nombre": "Anna",
+    "foto": "../fotos/modo2/person32.jpg"
+  },
+  {
+    "id": 33,
+    "nombre": "Alicia",
+    "foto": "../fotos/modo2/person33.jpg"
+  },
+  {
+    "id": 34,
+    "nombre": "Anastasia",
+    "foto": "../fotos/modo2/person34.jpg"
+  },
+  {
+    "id": 35,
+    "nombre": "Francisco",
+    "foto": "../fotos/modo2/person35.jpg"
+  },
+  {
+    "id": 36,
+    "nombre": "Nerea",
+    "foto": "../fotos/modo2/person36.jpg"
+  },
+  {
+    "id": 37,
+    "nombre": "Marina",
+    "foto": "../fotos/modo2/person37.jpg"
+  },
+  {
+    "id": 38,
+    "nombre": "Pelayo",
+    "foto": "../fotos/modo2/person38.jpg"
+  },
+  {
+    "id": 39,
+    "nombre": "Rentaro",
+    "foto": "../fotos/modo2/person39.jpg"
+  },
+  {
+    "id": 40,
+    "nombre": "Aysha",
+    "foto": "../fotos/modo2/person40.jpg"
+  }
+]
