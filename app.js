@@ -27,7 +27,7 @@ async function cargarModos() {
 
 async function cargarPersonajes() {
 
-    personajes = await fetch(modoActual)
+    personajes = await fetch(`json/${modoActual}`)
         .then(r => r.json());
 
     personajeActual = null;
